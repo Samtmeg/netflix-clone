@@ -1,0 +1,33 @@
+navbar{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-inline: 50px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding-block: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.left-navigation{
+    display: flex;
+    flex-direction: row;
+    
+       /* align-content: start; */
+}
+
+.left-navigation>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+}
+
+.right-navigation{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    /* align-items:center; */
+
+}
