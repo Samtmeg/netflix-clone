@@ -15,20 +15,20 @@ function Footer () {
                 <div><YouTubeIcon/></div>
             </div>
             <div className="footer-main-grid-container">
-                <div class="grid-item">Audio Description</div>
-                <div class="grid-item">Help centre</div>
-                <div class="grid-item">Gift Cards</div>
-                <div class="grid-item">Media Centre</div>
-                <div class="grid-item">Investor Relations</div>
-                <div class="grid-item">Jobs</div>
-                <div class="grid-item">Netflix Shop</div>
-                <div class="grid-item">Terms of Use</div>
-                <div class="grid-item">Privacy</div>
-                <div class="grid-item">Legal Notices</div>
-                <div class="grid-item">Cookie Preferences</div>
-                <div class="grid-item">Corporate Information</div>
-                <div class="grid-item">Contact Us</div>
-                <div class="grid-item">Advert choices</div>
+                <div className="grid-item">Audio Description</div>
+                <div className="grid-item">Help centre</div>
+                <div className="grid-item">Gift Cards</div>
+                <div className="grid-item">Media Centre</div>
+                <div className="grid-item">Investor Relations</div>
+                <div className="grid-item">Jobs</div>
+                <div className="grid-item">Netflix Shop</div>
+                <div className="grid-item">Terms of Use</div>
+                <div className="grid-item">Privacy</div>
+                <div className="grid-item">Legal Notices</div>
+                <div className="grid-item">Cookie Preferences</div>
+                <div className="grid-item">Corporate Information</div>
+                <div className="grid-item">Contact Us</div>
+                <div className="grid-item">Advert choices</div>
             </div>
             <div className="footer-servicecode-sec"><div>Service Code</div></div>
             <div className="footer-copyright-sec"> © 1997 - 2024 Netflix, Inc</div>
