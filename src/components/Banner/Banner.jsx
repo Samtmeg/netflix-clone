@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import requests from '../../utils/requests';
 import './banner.css'
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+// import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 function Banner () {
 
@@ -44,12 +44,13 @@ function Banner () {
                     {/* {((nowPlaying.overview).length) > 150? "a" : "b"} */}
                 </div>
                 <div className="banner_buttons">
-                    <button className ="play_button">< i PlayArrowIcon />Play </button>
-                    <button className="info_button"><i InfoOutlinedIcon/>More info</button>
+                    <button className ="play_button">Play </button>
+                    <button className="info_button">More info</button>
                 </div>
             </div>
-
+            <div className = "banner_fadebottom"/>
         </div>
+        
     );
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './header.css';
 import NetflixLogo from '../../assets/NetflixLogo.png';
 import SearchIcon from '@mui/icons-material/Search';
@@ -7,9 +7,29 @@ import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 function Header () {
+
+    const [show, handleShow] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        if (window.scrollY > 100) {
+            handleShow(true);
+        } else {
+            handleShow(false);
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+        // Cleanup the event listener on component unmount
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
     return (
         <>
-            <navbar>
+            <div className={`navbar ${show && 'nav_black'}`}>
                 <div className="left-navigation">
                     <img src={NetflixLogo} alt="" height={50} />
                     <ul>
@@ -27,7 +47,7 @@ function Header () {
                         <div><AccountBoxOutlinedIcon/></div>
                         <div><ArrowDropDownIcon/></div>
                 </div>
-            </navbar>
+            </div>
         </>
     );
 }

@@ -1,13 +1,22 @@
-navbar{
+.navbar{
     display: flex;
+    position: fixed;
     flex-direction:row;
     justify-content: space-between;
-    padding-inline: 50px;
+    padding-inline: 5vw;
+    width: 90%;
     background-color: black;
+    background-color: transparent;
     color: white;
     align-items: center;
     padding-block: 10px;
     margin-bottom: 10px;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.nav_black{
+    background-color: black;
 }
 
 .left-navigation{

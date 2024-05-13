@@ -1,0 +1,33 @@
+.row_title{
+    color: white;
+    /* font-size: 1.5rem; */
+    padding-inline: 5vw;
+}
+
+.poster_container{
+    padding-inline: 5vw;
+    display: flex;
+    flex-direction:row;
+    gap:10px;
+    overflow-x: scroll;
+}
+
+.poster_container::-webkit-scrollbar {
+    display: none;
+}
+
+.poster_item{
+    height: 150px;
+    object-fit: contain;
+}
+
+.poster_item_large{
+    height: 250px;
+    object-fit: contain;
+}
+
+.poster_item:hover, .poster_item_large:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
