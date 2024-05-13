@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/samtmeg/netflix-clone", plugins: [react()],
+  base: "//netflix-clone/", 
+  plugins: [react()],
 })
 
