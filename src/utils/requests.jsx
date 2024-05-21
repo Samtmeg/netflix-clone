@@ -1,4 +1,5 @@
-const API_KEY = import.meta.env.VITE_APP_API_KEY
+// const API_KEY = import.meta.env.VITE_APP_API_KEY
+const API_KEY = "7340480a83b373edb505f5043d88de99"
 const baseURL = "https://api.themoviedb.org/3"
 
 const requests = {
